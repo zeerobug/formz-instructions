@@ -2,14 +2,14 @@
 ## Instructivo Formz
 ##### Guía de integración
 
-###RESUMEN
+### RESUMEN
 Esta guía permite la integración de formularios **Formz** con Mailtrackpro para capturar sus resultados, mandar una copia por mail a un responsable y hacer el tracking de los visitantes desde la recepción del mail al final de su recorrido en landing.
 
-###CONECCIÓN
+### CONECCIÓN
 URL: http://be.clickexperts.com/
 User y Pass: preguntar a soporte
 
-###INTEGRACIÓN DE FORMULARIO
+### INTEGRACIÓN DE FORMULARIO
 1. **Creación del formulario:**
     * Ir a “New Form” y llenar los campos siguientes:
     **Title:** Título del formulario
