@@ -25,7 +25,7 @@ User y Pass: preguntar a soporte
         <img src="https://api.keen.io/3.0/projects/PROJECT_ID/events/formz?api_key=WRITE_KEY&data=ENCODED_DATA"/>
         ```
     1. **Landing Pages:**
-    Insertar el codigo siguiente en las paginas del landing, justo antes del tag \</title\>. Tiee que reemplazar FORM_ID por el valor del id obtenido en la etapa 1.  PROJECT_ID y WRITE_KEY seran comunicados por soporte.
+    Insertar el codigo siguiente en las paginas del landing, justo antes del tag \</title\>. Tiene que reemplazar FORM_ID por el valor del id obtenido en la etapa 1.  PROJECT_ID y WRITE_KEY seran comunicados por soporte. STEP_NUMBER corresponde al numero de paso en el formulario. Por ejemplo "1" para la 1ra pagina, "2" para la segunda si hay varias y "final" para la pagina de agradecimiento y compleción del formulario.
     
         ```
         <script>
