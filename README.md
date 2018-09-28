@@ -36,13 +36,13 @@ User y Pass: preguntar a soporte
 
         KeenAsync.ready(function(){
         const client = new KeenAsync({
-            projectId: "5baa0bf3c9e77c00012d44b9",
-            writeKey: "5C0A605943CD99D62AD84E2B32E9C07437DDEFFE052CC5702833F05394E15A9B8FF2315CF32204FB49FD385464A0D47F590CADE8B1C87998BDA9DB4FFC9466DBCE891D692151F1A8CB8DB1F3CA33CCDEABFE39DC16B0691180B585338CAB048A"
+            projectId: "PROJECT_ID",
+            writeKey: "WRITE_KEY"
         });
 
         // Record an event
         client.recordEvent('formz', {
-            formID: "5bacb34faf9769400a3b8269",
+            formID: "FORM_ID",
             step: "final"
         });
         });
@@ -62,7 +62,7 @@ User y Pass: preguntar a soporte
                 e.preventDefault()
                 var form = $( formSelector )
                 var url = 'http://api.clickexperts.com/api/responses/storeAndSend';
-                $(this).append('<input type="hidden" name="_form_key" value="5bacb34faf9769400a3b8269" /> ');
+                $(this).append('<input type="hidden" name="_form_key" value="FORM_ID" /> ');
                 $.post( url, {parameters: serializeObject(form)});
             }
         )
