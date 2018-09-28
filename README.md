@@ -27,7 +27,7 @@ User y Pass: preguntar a soporte
         <img src="https://api.keen.io/3.0/projects/PROJECT_ID/events/formz?api_key=WRITE_KEY&data=ENCODED_DATA"/>
         ```
     1. **Landing Pages:**  
-    Insertar el codigo del campo "Landing Tag" en el HTML de la \pagina landing, justo antes del tag \</title\>. Si el formulario tiene mas de una pagina, es necesario incrementar la variable step de 1 a cada pagina. En la ultima pagina (agradecimiento) se pone a "step" el valor "final".  
+    Insertar el codigo del campo "Landing Tag" en el HTML de la pagina landing, justo antes del tag \</title\>. Si el formulario tiene mas de una pagina, es necesario incrementar la variable step de 1 a cada pagina. En la ultima pagina (agradecimiento) se pone a "step" el valor "final".  
     por ejemplo:
         ```
         <script>
