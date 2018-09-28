@@ -54,18 +54,18 @@ User y Pass: preguntar a soporte
     Se necesitan postear los datos del formulario al endpoint del API de formz. Para esto, pegar en la pagina del formulario el codigo del campo "Formz API data".  Se tiene que reemplazar "formHtmlId" por el ID del formulario. Por ejemplo:
 
         ```
-        var serializeObject=function(form){"use strict";var a={},b=function(b,c){var d=a[c.name];"undefined"!=typeof d&&d!==null?$.isArray(d)?d.push(c.value):a[c.name]=[d,c.value]:a[c.name]=c.value};return $.each(form.serializeArray(),b),a};
+        serializeObject=function(form){"use strict";var a={},b=function(b,c){var d=a[c.name];"undefined"!=typeof d&&d!==null?$.isArray(d)?d.push(c.value):a[c.name]=[d,c.value]:a[c.name]=c.value};return $.each(form.serializeArray(),b),a};
 
-        $('#formHtmlId').submit(function(e) {
-        var url = 'http://api.clickexperts.com/api/responses/storeAndSend';
-        $(this).append('<input type="hidden" name="_form_key" value="5bacb34faf9769400a3b8269" /> ');
-        var data = serializeObject($(this))
-        var jqxhr = $.ajax({
-            url: url, method: "POST", dataType: "json", data: data
-        }).success(
-            // do something
-        );
-        });
+        var formSelector = '#formHtmlId'
+        $(formSelector).submit(
+            function(e) {
+                e.preventDefault()
+                var form = $( formSelector )
+                var url = 'http://api.clickexperts.com/api/responses/storeAndSend';
+                $(this).append('<input type="hidden" name="_form_key" value="5bacb34faf9769400a3b8269" /> ');
+                $.post( url, {parameters: serializeObject(form)});
+            }
+        )
         ```
 
     1. Contactar soporte para validación de la integración.
