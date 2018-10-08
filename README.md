@@ -12,11 +12,17 @@ User y Pass: preguntar a soporte
 ### INTEGRACIÓN DE FORMULARIO
 1. **Creación del formulario:**  
     * Ir a “New Form” y llenar los campos siguientes:
+    
     **Title:** Título del formulario
+    
     **To email:** Mail del responsable que recibe los resultados de los formularios
+    
     **From email:** Mail del remitente
+    
     **Subject:** Asunto del mail
+    
     **Tracking project ID** Para el seguimiento del mail, landing y form, entrar el ID comunicado por soporte 
+    
     * Después de la validación, ir a la solapa "TAGS" para integrar los tags de seguimiento 
 
 2. **Integración de los tags**
